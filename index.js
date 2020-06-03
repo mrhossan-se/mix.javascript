@@ -1,12 +1,12 @@
-  //remove extra number
-var name = [2, 3, 4, 2, 55, 66, 4, 4, 5, 7, 7,];
-var uniqName = [];
+  //remove the extra space
+  var speech = "i am a      good   person. idon't  snore at  night ";
 
-for(i = 0; i<name.length; i++){
-   var element = name[i];
-   var index = uniqName.indexOf(element);
-   if(index == -1){
-      uniqName.push(element)
-   }
-}
-console.log(uniqName)
+  var count = 0;
+  for(var i = 0; i<speech.length; i++){
+     var char = speech[i];
+     if(char == " " && speech[i -1] !=" " ){
+        count++;
+     }
+  }
+  //count++;
+  console.log("now exact space here :", count)
