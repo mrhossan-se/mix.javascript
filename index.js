@@ -1,12 +1,12 @@
-  //remove the extra space
-  var speech = "i am a      good   person. idon't  snore at  night ";
-
-  var count = 0;
-  for(var i = 0; i<speech.length; i++){
-     var char = speech[i];
-     if(char == " " && speech[i -1] !=" " ){
-        count++;
-     }
+ function reverseString(str){
+var reverse = "";
+for(i = 0; i<str.length; i++){
+   var char = str[i];
+   reverse = char + reverse;
   }
-  //count++;
-  console.log("now exact space here :", count)
+  return reverse;
+ }
+
+ var statement = "Hello Alien brother, how are you?";
+ var forAlien = reverseString(statement);
+ console.log(forAlien);
