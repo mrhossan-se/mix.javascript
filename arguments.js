@@ -1,28 +1,25 @@
- function add(num1, num2) {
-    return num1 + num2 ;
- }
-const result = add(2, 5, 10)
-console.log(result)
+  let bonus = 20;
 
- function add(num1, num2) {
-    return num1 + num2, arguments[2];
- }
-const result = add(2, 5, 10)
-console.log(result);
-
-
- function add(num1, num2){
-    console.log([...arguments])
-    return num1 + num2 + arguments[2];
-    
+  function sum(first, second){
+     let result = first + second +bonus;
+    //console.log(bonus)
+    if (result > 9) {
+       var gfMood = "happy";
+       mood = "fishy";
+       mood = "funky";
+       mood = "cranky"
+      //  console.log(gfMood);
     }
-    const result = add(2, 3, 5, 7);
-console.log(result); function add(num1, num2){
-   function multiply(multiplier, ...theArgs) {
-      return theArgs.map(element => {
-        return multiplier + element
-      })
-    }
+    //console.log(gfMood);
+    //console.log(day);
+    let day = "friday"
+    console.log(day)
+     return result;
     
-    let arr = multiply(2, 1, 2, 3)
-    console.log(arr)   
+  }
+
+  const output = sum(3, 7);
+  //console.log(bonus)
+  //console.log(output)
+  //console.log(result)
+ // console.log(gfMood);
