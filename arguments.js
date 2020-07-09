@@ -1,44 +1,28 @@
- const numbers = [1, 2, 3, 4,5 ,6, 7, 8,9, 0]
- const output = [];
-
- for (let i = 0; i < numbers.length; i++) {
-    const element = numbers[i];
-    const result = element * element;
-    output.push(result)
+ function add(num1, num2) {
+    return num1 + num2 ;
  }
-
-console.log(output)
-
-function square (element){
-   return element * element;
-}
-
-numbers.map(function(element, index, array){
-   console.log(element, index, array)
-})
-
-
-function square (element){
-   return element * element;
-}
-
-const square = element => element * element;
-
-const square = x => x * x;
-
-const result = numbers.map(function(element){
-  return element * element;
-})
-
-const result = numbers.map(x => x * x);
+const result = add(2, 5, 10)
 console.log(result)
 
-const bigger = numbers.filter(x => x >5);
-const bigger = numbers.filter(x => x == 5);
-const bigger = numbers.filter(x => x <5);
-const isThere = numbers.find(x => x >5);
-const isThere = numbers.find(x => x <5);
-console.log(isThere)
+ function add(num1, num2) {
+    return num1 + num2, arguments[2];
+ }
+const result = add(2, 5, 10)
+console.log(result);
 
 
-
+ function add(num1, num2){
+    console.log([...arguments])
+    return num1 + num2 + arguments[2];
+    
+    }
+    const result = add(2, 3, 5, 7);
+console.log(result); function add(num1, num2){
+   function multiply(multiplier, ...theArgs) {
+      return theArgs.map(element => {
+        return multiplier + element
+      })
+    }
+    
+    let arr = multiply(2, 1, 2, 3)
+    console.log(arr)   
