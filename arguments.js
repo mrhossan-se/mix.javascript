@@ -1,34 +1,83 @@
- 
-//defined vs undefined
+ //== vs ===
 
-undefined
-let love;
-console.log(love);
 
-function add(num1, num2) {
-   console.log(num1 + num2);
-   return
+const first = 2;
+const second = "2";
+if(first == second){
+  console.log("condition is true")
+}
+else{
+   console.log("condition is false")
 }
 
-const result = add(13, 100);
-console.log(result)
-
-function add(num1, num2) {
-   console.log(num1, num2);
+const first = 2;
+const second = "2";
+if(first === second){
+  console.log("condition is true")
 }
-const result = add(13)
-console.log(result)
+else{
+   console.log("condition is false")
+}
 
 
-const lover = {name: "smart hand", phone: 727890687};
-console.log(lover.gf)
+const first = 1;
+const second = true;
+if(first == second){
+  console.log("condition is true")
+}
+else{
+   console.log("condition is false")
+}
 
-let fun = undefined;
-let fun = "undefined"
-console.log(fun)
 
-let ages = [2, 5, 9]
-console.log(ages[11]);
+
+const first = 0;
+const second = false;
+if(first == second){
+  console.log("condition is true")
+}
+else{
+   console.log("condition is false")
+}
+
+
+const first = 0;
+const second = "false";
+if(first == second){
+  console.log("condition is true")
+}
+else{
+   console.log("condition is false")
+}
+
+
+const first = 0;
+const second = false;
+if(first == second){
+  console.log("condition is true")
+}
+else{
+   console.log("condition is false")
+}
+
+
+const first = 0;
+const second = 1;
+if(first == second){
+  console.log("condition is true")
+}
+else{
+   console.log("condition is false")
+}
+
+
+
+
+
+
+
+
+
 
 
 
