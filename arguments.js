@@ -1,86 +1,44 @@
- //== vs ===
+ const numbers = [1, 2, 3, 4,5 ,6, 7, 8,9, 0]
+ const output = [];
 
+ for (let i = 0; i < numbers.length; i++) {
+    const element = numbers[i];
+    const result = element * element;
+    output.push(result)
+ }
 
-const first = 2;
-const second = "2";
-if(first == second){
-  console.log("condition is true")
-}
-else{
-   console.log("condition is false")
-}
+console.log(output)
 
-const first = 2;
-const second = "2";
-if(first === second){
-  console.log("condition is true")
-}
-else{
-   console.log("condition is false")
+function square (element){
+   return element * element;
 }
 
-
-const first = 1;
-const second = true;
-if(first == second){
-  console.log("condition is true")
-}
-else{
-   console.log("condition is false")
-}
+numbers.map(function(element, index, array){
+   console.log(element, index, array)
+})
 
 
-
-const first = 0;
-const second = false;
-if(first == second){
-  console.log("condition is true")
-}
-else{
-   console.log("condition is false")
+function square (element){
+   return element * element;
 }
 
+const square = element => element * element;
 
-const first = 0;
-const second = "false";
-if(first == second){
-  console.log("condition is true")
-}
-else{
-   console.log("condition is false")
-}
+const square = x => x * x;
 
+const result = numbers.map(function(element){
+  return element * element;
+})
 
-const first = 0;
-const second = false;
-if(first == second){
-  console.log("condition is true")
-}
-else{
-   console.log("condition is false")
-}
+const result = numbers.map(x => x * x);
+console.log(result)
 
-
-const first = 0;
-const second = 1;
-if(first == second){
-  console.log("condition is true")
-}
-else{
-   console.log("condition is false")
-}
-
-
-
-
-
-
-
-
-
-
-
-
+const bigger = numbers.filter(x => x >5);
+const bigger = numbers.filter(x => x == 5);
+const bigger = numbers.filter(x => x <5);
+const isThere = numbers.find(x => x >5);
+const isThere = numbers.find(x => x <5);
+console.log(isThere)
 
 
 
