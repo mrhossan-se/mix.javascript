@@ -1,66 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    v
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    v
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    vv
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    vvvv
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    v
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test javascript</title>
 
-    <title>mix</title>
 </head>
-
 <body>
+    
+<h1>hello mr/miss fetch</h1>
+<h2>JSON</h2>
+<h2>javaScript Object Notation</h2>
+<ul id="users-container">
 
-    <p>hello </p>
+</ul>
 
 
-    <script src="index.js"></script>
+
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then(json => displayUser(json))
+
+  function displayUser(users) {
+      const userNames = users.map(user => user.username);
+      const ul = document.getElementById("users-container");
+
+       for(let i = 0; i< userNames.length; i++){
+       const user = userNames[i];
+       const li = document.createElement("li");
+       li.innerText = user;
+       ul.appendChild(li)
+       }
+    }
+
+
+       //json data from server
+//     hello mr/miss fetch
+// JSON
+// javaScript Object Notation
+// Bret
+// Antonette
+// Samantha
+// Karianne
+// Kamren
+// Leopoldo_Corkery
+// Elwyn.Skiles
+// Maxime_Nienow
+// Delphine
+// Moriah.Stanton
+
+
+    </script>
 </body>
-
 </html>
