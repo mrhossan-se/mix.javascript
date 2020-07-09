@@ -1,25 +1,20 @@
-  let bonus = 20;
-
-  function sum(first, second){
-     let result = first + second +bonus;
-    //console.log(bonus)
-    if (result > 9) {
-       var gfMood = "happy";
-       mood = "fishy";
-       mood = "funky";
-       mood = "cranky"
-      //  console.log(gfMood);
+ function stopWatch(){
+    let count = 0;
+    return function(){
+       count++;
+       return count;
     }
-    //console.log(gfMood);
-    //console.log(day);
-    let day = "friday"
-    console.log(day)
-     return result;
-    
-  }
+ }
+ const clock1 = stopWatch();
+ console.log(clock1());
+ console.log(clock1());
+ console.log(clock1());
+ console.log(clock1());
+ console.log(clock1());
 
-  const output = sum(3, 7);
-  //console.log(bonus)
-  //console.log(output)
-  //console.log(result)
- // console.log(gfMood);
+ const clock2 = stopWatch();
+ console.log(clock1());
+ console.log(clock2());
+ console.log(clock2());
+ console.log(clock1());
+ console.log(clock1());
