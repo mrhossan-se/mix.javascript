@@ -1,24 +1,34 @@
+ 
+//defined vs undefined
 
+undefined
+let love;
+console.log(love);
 
-//truthy value
-//' ', '0', [], {}, "false" 1,
-
-//falsy value
-// false, 0, "", undefined, null, NaN, 
-
-  var name = 1;
-if (name) {
-   console.log("condition is true")
-}
-else{
-  console.log("condition is false")
+function add(num1, num2) {
+   console.log(num1 + num2);
+   return
 }
 
+const result = add(13, 100);
+console.log(result)
+
+function add(num1, num2) {
+   console.log(num1, num2);
+}
+const result = add(13)
+console.log(result)
 
 
+const lover = {name: "smart hand", phone: 727890687};
+console.log(lover.gf)
 
+let fun = undefined;
+let fun = "undefined"
+console.log(fun)
 
-
+let ages = [2, 5, 9]
+console.log(ages[11]);
 
 
 
