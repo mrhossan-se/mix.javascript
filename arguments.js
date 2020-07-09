@@ -1,14 +1,38 @@
-const num = [1, 2, 3, 4,  5, 6, 7, 8, 9, 0];
-for (let i = 0; i < num.length; i++) {
-   if(num[i]>5){
-      break;
-   }
-   //console.log(num[i])
+const user = {id: 200, name: "Hossan", age: -20};
+//oup put
+{"id":200,"name":"Hossan","age":-20}
+
+const userJSON = JSON.stringify(user);
+console.log(userJSON);
+const userFromJSON = JSON.parse(userJSON);
+console.log(userFromJSON);
+
+const user ={
+   id: 245,
+   name: "Hossan",
+   lover: {
+           name: "Nice face",
+           favFood: "pizza",
+           },
+   friendAge: [12, 45, 95, +1],
+   friendsName: ["rocket", "cold fire", "hot moon", "soft stone"]
+};
+//data export to server
+const userJSON = JSON.stringify(user);
+console.log(userJSON);
+
+//data import from server
+const userFromJSON = JSON.parse(userJSON);
+console.log(userFromJSON);
+
+
+//out put
+{"id":245,"name":"Hossan","lover":{"name":"Nice face","favFood":"pizza"},"friendAge":[12,45,95,1],"friendsName":["rocket","cold fire","hot moon","soft stone"]}
+{
+  id: 245,
+  name: 'Hossan',
+  lover: { name: 'Nice face', favFood: 'pizza' },
+  friendAge: [ 12, 45, 95, 1 ],
+  friendsName: [ 'rocket', 'cold fire', 'hot moon', 'soft stone' ]
 }
- 
-for (let i = 0; i < num.length; i++) {
-   if(num[i]<0){
-      continue;
-   }
-   console.log(num[i])
-}
+
