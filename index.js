@@ -1,16 +1,9 @@
-var a = 600;
-var b = 700;
-var c = 500;
-
-if (a > b) {
-  console.log("a is bigger  ")
+var marks = [19, 29, 39, 49, 59, 69, 79, 89, 99, 00];
+var max = marks[0];
+for (let i = 0; i < marks.length; i++) {
+  var element = marks[i];
+  if (element > max) {
+    max = element;
+  }
 }
-else if(b > c){
-  console.log("b is bigger ")
-}
-else{
-  console.log("c is bigger  ")
-}
-
-var max = Math.max(a, b, c)
-console.log(max)
+console.log("hightest value is ", max)
