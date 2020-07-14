@@ -1,24 +1,15 @@
- var a = 5;
- var b = 10;
+var num = 2 ;
+var number = 2.5;
 
- console.log("before swap a = ", a , "b = ", b)
+var result = Math.floor(number);
+var result1 = Math.ceil(number);
+var result2 = Math.round(number);
+var result3 = Math.random(number);
+var randomNumber = Math.random(number) * 6;
+var randomRoundNumber = Math.round(randomNumber);
 
-
- var c = 5;
- var a = b;
- var b= c;
- console.log("after swap a =", a , "b = ", b)
-
- var x = 5;
- var y = 10;
-
- x = x+y;
- y = x-y;
- x = x -y;
-
- console.log(" x =", x , " y " , y)
-
- var p = 5;
- var q = 10;
-[p, q] = [q, p]
-console.log("after swap p = ", p , "q =", q)
+for (let i = 0; i < 10; i++) {
+  var randomNum = Math.random(number) * 10;
+var randomRoundNumber = Math.round(randomNum);
+console.log(randomRoundNumber);
+}
