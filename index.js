@@ -1,11 +1,21 @@
-var numbers = [19, 19, 29, 39, 49, 59, 91, 96, 89, 99, 19, 39, 00];
-var uniqueName = [];
-for (let i = 0; i < numbers.length; i++) {
-  const element = numbers[i];
-  var index = uniqueName.indexOf(element);
-  if (index == -1) {
-    uniqueName.push(element)
-  }
+ 
+//  var speech = "i am a good person. i like to good person";
+//  var count = 0;
+//  for (let i = 0; i < speech.length; i++) {
+//    const char = speech[i];
+//    if (char == " ") {
+//      count++;
+//    }
+//  }
+//  console.log(count)//answer is =  9
   
-}
-console.log(uniqueName) 
+ var speech = "i am     a good    person i like to good person";
+ var count = 0;
+ for (let i = 0; i < speech.length; i++) {
+   const char = speech[i];
+   if (char == " " && speech[i-1] != " ") {
+     count++;
+   }
+ }
+//count++;
+ console.log(count)
