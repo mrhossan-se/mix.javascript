@@ -10,12 +10,40 @@
  </head>
  <body>
 
-<p>hello</p>
+    <div id="container">
+        <h1>My List</h1>
+        <ul id="myList">
+          <li id="first">Lorem, ipsum dolor.</li>
+          <li className="item">Quo, ut porro.</li>
+          <li className="item">Similique, dolor minima?</li>
+          <li className="item">Beatae, laborum earum.</li>
+          <li className="item">Autem, maiores dolorum.</li>
+        </ul>
+        <button id="addNew">Add New Items</button>
+      </div>
+     <script>
+//    var items = document.getElementsByTagName('li');
+//    for (let i = 0; i < items.length; i++) {
+//        const item = items[i];
+//        item.addEventListener('click', function(event){
+//            event.target.parentNode.removeChild(event.target);
+//        })
+//    }
 
-<div id="user-container">
+document.getElementById('addNew').addEventListener('click', function(){
+    var itemParent = document.getElementById('myList');
+    var newItem = document.createElement('li');
+    newItem.innerText = 'Brand New Item';
+    itemParent.appendChild(newItem);
+})
 
-</div>
 
-     <script src="./index.js"></script>
+         document.getElementById('myList').addEventListener('click', function(){
+    
+    event.target.parentNode.removeChild(event.target);
+  
+})
+ 
+     </script>
  </body>
  </html>
